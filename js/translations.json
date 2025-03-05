@@ -151,7 +151,7 @@
               "images/portfolio/Blender.png",
               "images/portfolio/Blender2.png"
             ],
-            "video": "images/portfolio/video/MonsterJump.mp4"
+            "video": "https://www.youtube.com/embed/7kI_uzB_Exk?si=gDHLWlAWpQI234Tw"
           },
           "github_link": "https://github.com/ElCasaDeNova/MonsterJump"
         },
@@ -209,7 +209,7 @@
           ],
           "game_preview": {
             "images": [],
-            "video": "images/portfolio/video/HangKnight.mp4"
+            "video": "https://www.youtube.com/embed/m_kqqfV9xzY?si=i8IdlKFJRrVhTn09"
           },
           "github_link": "https://github.com/ElCasaDeNova/HangMan"
         },
@@ -262,7 +262,7 @@
           ],
           "game_preview": {
             "images": [],
-            "video": "images/portfolio/video/SpaceShooter.mp4"
+            "video": "https://www.youtube.com/embed/Ut1GGq8ZLoc?si=PxLpGZxRX4ERaWel"
           },
           "github_link": "https://github.com/ElCasaDeNova/SpaceShooter2D"
         }
@@ -449,7 +449,7 @@
                 "images/portfolio/Blender.png",
                 "images/portfolio/Blender2.png"
               ],
-              "video": "images/portfolio/video/MonsterJump.mp4"
+              "video": "https://www.youtube.com/embed/7kI_uzB_Exk?si=gDHLWlAWpQI234Tw"
             },
             "github_link": "https://github.com/ElCasaDeNova/MonsterJump"
           },
@@ -507,7 +507,7 @@
             ],
             "game_preview": {
               "images": [],
-              "video": "images/portfolio/video/HangKnight.mp4"
+              "video": "https://www.youtube.com/embed/m_kqqfV9xzY?si=i8IdlKFJRrVhTn09"
             },
             "github_link": "https://github.com/ElCasaDeNova/HangMan"
           },
@@ -560,7 +560,7 @@
             ],
             "game_preview": {
               "images": [],
-              "video": "images/portfolio/video/SpaceShooter.mp4"
+              "video": "https://www.youtube.com/embed/Ut1GGq8ZLoc?si=PxLpGZxRX4ERaWel"
             },
             "github_link": "https://github.com/ElCasaDeNova/SpaceShooter2D"
           }

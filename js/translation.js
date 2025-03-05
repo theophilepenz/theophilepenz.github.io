@@ -131,10 +131,8 @@ function applyPortfolioTranslations(translations, lang) {
                                 ${project.game_preview.images.map(image => `<img src="${image}" alt="Aperçu du projet">`).join('')}
                             </div>
                             <p class="centred-text">${project.titles.video}</p>
-                            <video width="850" controls>
-                                <source src="${project.game_preview.video}" type="video/mp4">
-                                Votre navigateur ne prend pas en charge la vidéo.
-                            </video>
+                            <iframe width="850" height="450" src="${project.game_preview.video}" title="YouTube video player" frameborder="0" allow="accelerometer;
+                            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             <h3>${project.titles.github_title}</h3>
                             <p><a href="${project.github_link}" target="_blank">${project.titles.github_link}</a></p>
                         </div>
