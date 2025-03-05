@@ -296,7 +296,7 @@
     "contact" : {
         "adress" : "Adresse / Ville / Pays",
         "phone" : "Numéro",
-        "email" : "Adresse mail",
+        "email" : "Adresse mail"
     }
   },
   "en": {
@@ -595,7 +595,7 @@
     "contact" : {
         "adress" : "Address / City / Country",
 		"phone" : "Phone Number",
-		"email" : "Email Address",  
+		"email" : "Email Address"  
     }
   }
 }
