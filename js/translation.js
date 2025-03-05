@@ -5,7 +5,7 @@ async function loadTranslations(lang) {
 
     if (Object.keys(translations).length === 0) {
         try {
-            const response = await fetch('./translations.json');
+            const response = await fetch('https://theophilepenz.github.io/js/translations.json');
             if (!response.ok) throw new Error("Erreur de chargement du fichier JSON");
             translations = await response.json();
         } catch (error) {
