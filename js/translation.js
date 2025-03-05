@@ -1,5 +1,8 @@
-﻿// Fonction pour charger les traductions depuis translations.json (Fonction uniquement sous serveur)
+﻿let translations = {};
+
+// Fonction pour charger les traductions depuis translations.json (Fonction uniquement sous serveur)
 async function loadTranslations(lang) {
+
     if (Object.keys(translations).length === 0) {
         try {
             const response = await fetch('./translations.json');
