@@ -1,10 +1,15 @@
 ﻿// Fonction pour charger les traductions depuis translations.json (Fonction uniquement sous serveur)
-function loadTranslations(lang) {
+async function loadTranslations(lang) {
     if (Object.keys(translations).length === 0) {
-            // Charger translations.json seulement si ce n'est pas déjà fait
+        try {
             const response = await fetch('./translations.json');
+            if (!response.ok) throw new Error("Erreur de chargement du fichier JSON");
             translations = await response.json();
+        } catch (error) {
+            console.error("Erreur lors du chargement des traductions :", error);
+            return; // Arrêter l'exécution si le fichier ne charge pas
         }
+    }
 
     localStorage.setItem("preferredLang", lang);
 
@@ -14,7 +19,7 @@ function loadTranslations(lang) {
         
         if (translation) {
             if (Array.isArray(translation)) {
-                element.innerHTML = translation.join("<br>"); // Sépare chaque élément par un saut de ligne
+                element.innerHTML = translation.join("<br>");
             } else {
                 element.innerHTML = translation;
             }
