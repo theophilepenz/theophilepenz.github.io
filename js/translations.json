@@ -1,0 +1,601 @@
+﻿{
+  "fr": {
+    "nav": {
+      "about": "À propos",
+      "resume": "Parcours",
+      "portfolio": "Portfolio",
+      "skills": "Mes compétences",
+      "contact": "Contact",
+      "language": "Langue"
+    },
+    "about": {
+      "title": "Programmeur Gameplay",
+      "description1": "Avec près d'<span class='bold'>une décennie d'expérience en programmation</span>, j’ai compris que le <span class='bold'>domaine</span> dans lequel on évolue est aussi important que <span class='bold'>la technique</span>.",
+      "description2": "Cette réflexion m’a conduit à une reconversion naturelle : du <span class='bold'>DevOps</span> au <span class='bold'>développement de Gameplay</span>, dans l’univers qui me passionne depuis toujours.",
+      "description3": "Créer des mécaniques interactives, relever des défis techniques et donner vie à des expériences uniques est devenu bien plus qu’un métier : <span class='bold'>c’est ce qui me motive au quotidien</span>.",
+      "description4": "Aujourd’hui, je suis prêt à mettre mes compétences et ma passion au service d’un studio pour contribuer à des projets ambitieux."
+    },
+    "resume": {
+      "title": "Mon parcours",
+      "education": "Études",
+      "experience": "Expériences professionnelles",
+      "entries": {
+        "education": [
+          {
+            "date": "2024 - 2025 <small>( 6 mois )</small>",
+            "school": "MakeYourGame",
+            "degree": "Unity Certified Associate Programmer",
+            "details": [
+              "Formation encadrée de 6 mois en développement Unity et C# avec suivi hebdomadaire par un formateur professionnel.",
+              "Certifiée Qualiopi, garantissant un enseignement de qualité conforme aux standards professionnels.",
+              "Examen de certification réalisé en anglais, validant mes compétences techniques et linguistiques.",
+              "<a href='Documents/ProgrammerCertificate.pdf' target='_blank'>Consulter le certificat</a>"
+            ]
+          },
+          {
+            "date": "2020 - 2022 <small>( 2 ans )</small>",
+            "school": "Université de Lorraine",
+            "degree": "Master Génie Informatique"
+          },
+          {
+            "date": "2017 - 2020 <small>( 3 ans )</small>",
+            "school": "Université de Lorraine",
+            "degree": "Licence Informatique"
+          }
+        ],
+        "experience": [
+          {
+            "date": "2021 - 2024 <small>( 3 ans )</small>",
+            "company": "Worldline Financial Services",
+            "role": "Spring Boot Developer",
+            "details": [
+              "Développement (Programmation Orientée Objet) en équipe Agile/Scrum avec des équipes anglophones et francophones.",
+              "Collaboration étroite avec designers et managers pour livrer des fonctionnalités complexes et optimisées.",
+              "Mise en place et respect des bonnes pratiques : code propre, documentation, optimisation et revues de code.",
+              "SPOC (Single Point of Contact) de l'équipe de développement : référent technique pour l’équipe de Certification, assurant la liaison et la résolution des problèmes liés au développement et à l'utilisation des scripts.",
+              "Accompagnement des nouveaux arrivants sur le projet (théorie, pratique et support à la résolution de problèmes)."
+            ]
+          },
+          {
+            "date": "2020 <small>( 2 mois )</small>",
+            "company": "Laboratoire PErSEUs",
+            "role": "Stagiaire",
+            "details": [
+              "Création complète d’une base de données.",
+              "Compréhension et analyse du projet.",
+              "Préparation des Diagrammes nécessaires (Use Case, Diagrammes des classes, etc.).",
+              "Préparation du serveur et programmation PL/SQL de la base définie.",
+              "Création complète d’une base de données. Compréhension et analyse du projet, préparation des Diagrammes nécessaires (Use Case, Diagrammes des classes, etc.)"
+            ]
+          },
+          {
+            "date": "2019 <small>( 1 mois )</small>",
+            "company": "SIX Payment Services",
+            "role": "Summer Job",
+            "details": [
+              "Modification de site web (HTML, JavaScript, Git).",
+              "Extraction et analyses de données d’une base (Java).",
+              "Génération de documents XML via des documents Excel."
+            ]
+          }
+          ,
+          {
+            "date": "2018 <small>( 1 mois )</small>",
+            "company": "SIX Payment Services",
+            "role": "Summer Job",
+            "details": [
+              "Création d’un site web, Gestion d’une base de données bancaires.",
+              "Utilisation d’outils professionnels : Way4 J’ai eu l’opportunité de débattre sur les potentielles solutions lors des réunions et également présenter aux autres services le résultat de mon mois de travail."
+            ]
+          }
+        ]
+      }
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "projects": [
+        {
+          "name": "MonsterJump",
+          "titles" : { 
+              "technologies":"Technologies utilisées",
+              "gameplay_mechanics":"Mécaniques de jeu",
+              "challenges":"Défis techniques",
+              "learn":"Ce que j'ai appris",
+              "game_preview":"Aperçu du jeu",
+              "github_title" : "Lien vers le projet",
+              "video" : "Vidéo démo du Jeu",
+              "github_link":"Lien vers le projet"
+          },
+          "image": "images/portfolio/small/MonsterJump.png",
+          "full_image": "images/portfolio/MonsterJump.png",
+          "descriptions": [
+              "MonsterJump est le troisième et dernier projet que j’ai réalisé dans le cadre de la formation Développeur Unity - Niveau 2 de MakeYourGame en 2 mois. Ce jeu de plateforme 3D met en avant des mécaniques avancées de sauts, gravité, IA et maniabilité.",
+              "L’objectif initial était de créer un jeu de plateforme fluide et précis, intégrant :",
+              "✔ Une gestion optimisée des sauts et de la gravité",
+              "✔ Une <span class='bold-span'>IA</span> basique pour les ennemis",
+              "✔ Un système de contrôles ergonomique, adapté au clavier et à la manette",
+              "En plus des objectifs demandés, j’ai décidé d’explorer la création d’assets 3D sous Blender afin de mieux comprendre le travail des 3D Artistes dans un pipeline de production.",
+              "Il y a donc eu de gros efforts sur la modélisation 3D, les animations organiques et le gameplay. Cependant faire tout cela en 2 mois requiert des sacrifices. Le Level Design ainsi que d'autres aspects du jeu n'ont pas été poussés aussi loin que je ne l'aurais souhaité. Vous pouvez cependant regarder mon projet n°2 Hang Knight si vous souhaitez voir un projet plus accès sur le Level Design."
+          ],
+          "technologies": [
+            "🎮 Moteur de jeu : Unity",
+            "💻 Langage de programmation : C#",
+            "🏗️ Mécanique du jeu : Rigidbody, gestion de la gravité et forces appliquées",
+            "🎨 Modélisation 3D : Blender (Personnage principal et ennemis créés à la main)",
+            "🎭 Animations : Import de Mixamo",
+            "🎮 IA de base : Utilisation du NavMeshAgent"
+          ],
+          "gameplay_mechanics": [
+            "🎮 Utilisation du New Input System de Unity : Permet de passer dynamiquement du clavier à la manette sans configuration supplémentaire",
+            "🦘 Coyote Jump : Laisse un temps supplémentaire après avoir quitté une plateforme pour sauter, rendant le gameplay plus permissif",
+            "🎢 Dynamic Jump : La montée est plus lente que la descente, simulant une gravité réaliste avec force accrue lors de la chute",
+            "🤖 IA simpliste : Détection du joueur par Raycast et comportement basique des ennemis (Patrouille et Attaque)",
+            "🎭 Animations optimisées : Gestion des transitions via Animator Controller et BlendTree",
+            "🎨 Création d’assets 3D personnalisés (en initiative personnelle) pour mieux comprendre le travail des 3D Artistes"
+          ],
+          "challenges": [
+            "💡 Gestion avancée du saut et de la gravité : Ajout du Coyote Jump et du Dynamic Jump pour dynamiser le Gameplay. Ajout d'élément de Gameplay, tel que les plateformes instables qui s'inclinent selon le poids du personnage joué.",
+            "💡 Amélioration de la maniabilité : Au lieu de l'ancien Input Manager, j’ai configuré Unity New Input System pour une transition instantanée entre clavier et manette, facilitant le game feel et l’accessibilité.",
+            "💡 Optimisation : La zone est séparée en différente partie avec des couloirs les séparents. Chaque zone se génère et dégénère au fil du jeu pour avoir un jeu fluide tournant au minimum à 60 fps d'après le profiler. (Les vidéos ne représentant pas la fluidité actuelle du jeu)",
+            "💡 Création de modèles 3D personnalisés : Même si la formation ne demandait pas la création d’assets 3D, j’ai voulu explorer Blender afin de mieux comprendre le rôle des 3D Artistes et les contraintes techniques liées à l’intégration dans Unity. Cela m’a permis de voir comment optimiser un modèle pour qu’il s’intègre bien dans un moteur de jeu."
+          ],
+          "learn":[
+            "✅ Implémenter Unity New Input System pour un contrôle plus fluide et accessible",
+            "✅ Créer mes propres modèles 3D sous Blender (Compréhension basique de la modélisation, la retopologie, le texture painting, etc.) et les animers via Mixamo",
+            "✅ Gérer les interactions entre le joueur et l’IA dans un environnement 3D",
+            "✅ Optimiser la maniabilité avec des mécaniques avancées de saut",
+            "✅ Utiliser des techniques avancées de physique et gravité pour un gameplay naturel"
+          ],
+          "game_preview": {
+            "images": [
+              "images/portfolio/Blender.png",
+              "images/portfolio/Blender2.png"
+            ],
+            "video": "images/portfolio/video/MonsterJump.mp4"
+          },
+          "github_link": "https://github.com/ElCasaDeNova/MonsterJump"
+        },
+        {
+          "name": "HangKnight",
+            "titles" : { 
+                "technologies":"Technologies utilisées",
+                "gameplay_mechanics":"Mécaniques de jeu",
+                "challenges":"Défis techniques",
+                "learn":"Ce que j'ai appris",
+                "game_preview":"Aperçu du jeu",
+                "github_title" : "Lien vers le projet",
+                "video" : "Vidéo démo du Jeu",
+                "github_link":"Lien vers le projet"
+            },
+          "image": "images/portfolio/small/HangKnight.png",
+          "full_image": "images/portfolio/HangKnight.png",
+          "descriptions": [
+              "Le Pendu est le deuxième projet que j'ai réalisé dans le cadre de la formation Développeur Unity - Niveau 2 de MakeYourGame. Ce projet avait pour objectif de renforcer mes compétences en programmation C#, en particulier la programmation orientée objet (POO), et de me familiariser avec la création d'interfaces utilisateur (UI) sous Unity en <span class='bold-span'>deux mois</span>.",
+              "Ayant déjà une forte </span class='bold-span'>expertise en Java</span> et POO, j’ai complété la version de base du projet en <span class='bold-span'>seulement trois jours</span>, incluant :",
+              "✔ La logique du jeu (gestion des lettres et des erreurs)",
+              "✔ Une interface interactive",
+              "✔ L’intégration des effets sonores",
+              "Ne voulant pas me limiter à une simple implémentation 2D, j’ai décidé de <span class='bold-span'>pousser le projet plus loin</span> en le transformant en une expérience en 2,5D, intégrant des modèles 3D, des animations, des lumières mixtes et un gros effort sur le <span class='bold-span'>Level Design</span>."
+          ],
+          "technologies": [
+            "🎮 Moteur de jeu : Unity",
+            "💻 Langage de programmation : C#",
+            "🖥️ IHM : Unity UI pour l'affichage dynamique des lettres",
+            "🎭 Modèles 3D et animations : Mixamo, importation et gestion sous Unity",
+            "🎨 Level Design et Audio : Ajout de sons, musiques et assets 3D pour une immersion complète",
+            "🔄 <span class='bold-span'>Génération procédurale</span> : Pooling System pour optimiser l'utilisation",
+            "💡 Lumières Mixtes : Les lumières contribuent énormément à l'ambiance du jeu"
+          ],
+          "gameplay_mechanics": [
+            "✔ Passage à un environnement 3D : Ajout de modèles 3D issus de Mixamo avec animations intégrées",
+            "✔ Génération procédurale optimisée avec un Pooler : Récupération et réutilisation dynamique des morceaux du sol pour un niveau fluide et performant. Le Jeu défile à l'infini vers la droite et le terrain s'adaptera et se génèrera en fonction de la progression du joueur.",
+            "✔ Histoire interactive : Le personnage tombe lorsqu’on fait trop d’erreurs, mais esquive un arbre lorsqu’on trouve le mot",
+            "✔ Gestion des événements pour simuler les chutes et/ou esquives du personnage principal",
+            "✔ Mouvement fluide : Le personnage marche continuellement vers la droite",
+            "✔ Interface utilisateur immersive pour guider le joueur tout au long de la partie"
+          ],
+          "challenges": [
+            "💡 Passage d'un jeu 2D à un univers 3D interactif : J’ai dû réadapter toute la logique de jeu, la caméra et la gestion des animations pour s’adapter à un environnement en 2,5D.",
+            "💡 Génération procédurale optimisée avec un Pooler : Pour éviter la surcharge mémoire et améliorer la performance, <span class='bold-span'>j’ai mis en place un Pooling System qui gère dynamiquement les morceaux de terrain</span>.",
+            "💡 Optimisation du Jeu : Ajout du Fog, travail du <span class='bold-span'>LOD</span> et gestion des <span class='bold-span'>lumières mixed</span>",
+            "💡 Au lieu de créer et détruire des objets en permanence (ce qui est coûteux en performances), le Pooler récupère les terrains désactivés et les repositionne au fur et à mesure de la progression du joueur."
+          ],
+          "learn":[
+            "✅ <span class='bold-span'>Importer et gérer des modèles 3D et animations sous Unity</span>",
+            "✅ Mettre en place une génération procédurale optimisée avec un Pooling System",
+            "✅ <span class='bold-span'>Créer un jeu interactif</span> avec un personnage réagissant aux erreurs du joueur",
+            "✅ Intégrer des effets sonores aux animations et une ambiance immersive (Utilisation de l'Audio Mixer)",
+            "✅ Optimiser un projet et <span class='bold-span'>aller au-delà des attentes initiales</span>"
+          ],
+          "game_preview": {
+            "images": [],
+            "video": "images/portfolio/video/HangKnight.mp4"
+          },
+          "github_link": "https://github.com/ElCasaDeNova/HangMan"
+        },
+        {
+          "name": "SpaceShooter",
+            "titles" : { 
+                "technologies":"Technologies utilisées",
+                "gameplay_mechanics":"Mécaniques de jeu",
+                "challenges":"Défis techniques",
+                "learn":"Ce que j'ai appris",
+                "game_preview":"Aperçu du jeu",
+                "github_title" : "Lien vers le projet",
+                "video" : "Vidéo démo du Jeu",
+                "github_link":"Lien vers le projet"
+            },
+          "image": "images/portfolio/small/SpaceShooter.png",
+          "full_image": "images/portfolio/SpaceShooter.png",
+          "descriptions": [
+              "Space Shooter 2D est un projet que j’ai réalisé en <span class='bold-span'>un mois</span> dans le cadre de la formation Développeur Unity - Niveau 2 de MakeYourGame.",
+                "Son objectif était de me permettre de prendre en main <span class='bold-span'>Unity</span>, de découvrir les bases du <span class='bold-span'>C#</span> et de me familiariser avec les concepts fondamentaux du développement de jeux vidéo.",
+                "Ce projet était conçu pour <span class='bold-span'>simuler les conditions de travail</span> dans l’industrie du jeu vidéo. Bien que j’aie travaillé en grande partie de manière <span class='bold-span'>autonome</span>, j’ai pu bénéficier de supports vidéo proposés par le centre de formation ainsi que de <span class='bold-span'>revues hebdomadaires avec un formateur</span>. Celui-ci analysait mon avancement, me donnait des conseils pour améliorer mon projet et m’aidait à débloquer des problèmes techniques lorsque c’était nécessaire."
+          ],
+          "technologies": [
+            "🎮 Moteur de jeu : Unity",
+            "💻 Langage de programmation : C#",
+            "🎵 Gestion audio : Audio Source pour les effets sonores",
+            "🔥 Utilisations des Poolers pour améliorer les performances du jeu",
+            "🖼️ UI/UX : Canvas, TextMeshPro pour l’affichage du score et feedback visuel"
+          ],
+          "gameplay_mechanics": [
+            "✔ Mouvements du vaisseau avec Rigidbody2D et Input System",
+            "✔ Système de tir avec projectiles instanciés à l’aide de Prefabs",
+            "✔ Spawn aléatoire des ennemis et gestion des vagues progressives",
+            "✔ Détection des collisions entre projectiles, ennemis et joueur",
+            "✔ Système de score dynamique affiché en UI",
+            "✔ Effets sonores et visuels (bruitages, explosions, animations)",
+            "✔ Gestion des vies et écran de Game Over"
+          ],
+          "challenges": [
+            "💡 Optimiser le spawn des ennemis : J’ai implémenté un Spawner qui génère les ennemis à des positions aléatoires et ajuste la courbe de difficulté en augmentant leur fréquence et leur vitesse progressivement.",
+            "💡 Gérer les collisions efficacement : Grâce à l’utilisation des Colliders 2D et de OnTriggerEnter2D, j’ai pu détecter les interactions entre objets et déclencher les effets correspondants (destruction des ennemis, réduction des points de vie, affichage du Game Over).",
+            "💡 Apprendre de manière autonome tout en étant encadré : Grâce aux ateliers vidéos et aux retours réguliers de mon formateur, j’ai pu structurer mon apprenti"
+          ],
+          "learn":[
+            "✅ Comprendre le fonctionnement de Unity (GameObjects, Transform, Components, etc.)",
+            "✅ Écrire mes premiers scripts en C# et interagir avec des objets en temps réel",
+            "✅ Utiliser l’éditeur Unity pour créer une scène interactive et organiser des assets",
+            "✅ Gérer l’interface utilisateur et afficher des informations dynamiques",
+            "✅ Travailler en autonomie tout en recevant des feedbacks, comme en entreprise"
+          ],
+          "game_preview": {
+            "images": [],
+            "video": "images/portfolio/video/SpaceShooter.mp4"
+          },
+          "github_link": "https://github.com/ElCasaDeNova/SpaceShooter2D"
+        }
+      ]
+    },
+    "services" : {
+        "mainTitle" : "Mes compétences",
+        "title1" : "Programmation Orientée Objet",
+        "title2" : "Travail en Autonomie",
+        "title3" : "Résolution de Problèmes",
+        "title4" : "Esprit d'équipe",
+        "title5" : "Compétences Linguistiques",
+        "description1" : [
+            "Ayant été expert <span class='bold'>Java Spring Boot</span> pendant 3 ans, j’ai acquis une solide maîtrise de la programmation orientée objet.",
+            "J’applique ces compétences aux langages du jeu vidéo (C#, C++), en écrivant un code modulaire, optimisé et facile à lire pour <span class='bold'>faciliter la collaboration</span> et la maintenance."
+        ],     
+        "description2" : [
+            "Après <span class='bold'>1 an de travail en autonomie</span>, j’ai appris à gérer mes tâches, trouver des solutions par moi-même et progresser efficacement. Je produis un code propre et compréhensible, facilitant la collaboration.",
+            "Une fois à l’aise sur un projet, je suis totalement <span class='bold'>autonome</span>, tout en sachant échanger avec l’équipe lorsque nécessaire."],
+        "description3" : [
+            "J’ai été désigné <span class='bold'>SPOC</span> dans mon ancienne équipe grâce à ma capacité d’<span class='bold'>analyse</span>, de <span class='bold'>résolution</span> et d’<span class='bold'>explication</span> des bugs rencontrés"
+        ],
+        "description4" : [
+            "Je suis à l’écoute de mon équipe et j'aime <span class='bold'>partager</span> mes connaissances pour renforcer la <span class='bold'>qualité du travail</span> et la <span class='bold'>dynamique de groupe</span>"
+        ],
+        "description5" : [
+            "Titulaire d’un certificat <span class='bold'>C2 en anglais</span>, j’ai <span class='bold'>collaboré</span> avec des développeurs du monde entier et <span class='bold'>accompagné</span> certains lors de leur intégration."
+        ],
+        "certificate" : "Voir Certificat"
+    },
+    "contact" : {
+        "adress" : "Adresse / Ville / Pays",
+        "phone" : "Numéro",
+        "email" : "Adresse mail",
+    }
+  },
+  "en": {
+    "nav": {
+      "about": "About Me",
+      "resume": "Resume",
+      "portfolio": "Portfolio",
+      "skills": "Skills",
+      "contact": "Contact",
+      "language": "Language"
+    },
+    "about": {
+      "title": "Gameplay Programmer",
+      "description1": "With almost a <span class='bold'>decade of experience in programming</span>, I have realized that the <span class='bold'>field</span> we work in is just as important as <span class='bold'>technical skills</span>.",
+      "description2": "This realization led me to a natural career shift: from <span class='bold'>DevOps</span> to <span class='bold'>Gameplay Development</span>, in the industry I have been passionate about since childhood.",
+      "description3": "Creating interactive mechanics, tackling technical challenges, and bringing unique experiences to life is more than just a job—<span class='bold'>it is what drives me every day</span>.",
+      "description4": "Today, I am ready to bring my skills and passion to a game studio to contribute to ambitious projects."
+    },
+    "resume": {
+      "title": "My Professional Background",
+      "education": "Studies",
+      "experience": "Work Experiences",
+      "entries": {
+        "education": [
+          {
+            "date": "2024 - 2025 <small>( 6 months )</small>",
+            "school": "MakeYourGame",
+            "degree": "Unity Certified Associate Programmer",
+            "details": [
+              "6-month supervised training in Unity development and C# with weekly mentoring by a professional instructor.",
+              "Certified by Qualiopi, ensuring high-quality training according to professional standards.",
+              "Certification exam conducted in English, validating my technical and linguistic skills.",
+              "<a href='Documents/ProgrammerCertificate.pdf' target='_blank'>View certificate</a>"
+            ]
+          },
+          {
+            "date": "2020 - 2022 <small>( 2 years )</small>",
+            "school": "Université de Lorraine",
+            "degree": "Master in Computer Science"
+          },
+          {
+            "date": "2017 - 2020 <small>( 3 years )</small>",
+            "school": "Université de Lorraine",
+            "degree": "Bachelor's in Computer Science"
+          }
+        ],
+        "experience": [
+          {
+            "date": "2021 - 2024 <small>( 3 years )</small>",
+            "company": "Worldline Financial Services",
+            "role": "Spring Boot Developer",
+            "details": [
+              "Developed in Agile/Scrum teams with English- and French-speaking colleagues.",
+              "Collaborated closely with designers and managers to deliver complex and optimized features.",
+              "Implemented and maintained best practices: clean code, documentation, optimization, and code reviews.",
+              "Single Point of Contact (SPOC) for the development team, acting as a technical liaison.",
+              "Mentored new team members in both theoretical and practical aspects."
+            ]
+          },
+          {
+            "date": "2020 <small>( 2 months )</small>",
+            "company": "Laboratoire PErSEUs",
+            "role": "Intern",
+            "details": [
+              "Designed and developed a complete database.",
+              "Analyzed the project requirements.",
+              "Created necessary diagrams (Use Case, Class Diagrams, etc.).",
+              "Set up the server and implemented PL/SQL programming."
+            ]
+          },
+          {
+            "date": "2019 <small>( 1 month )</small>",
+            "company": "SIX Payment Services",
+            "role": "Summer Job",
+            "details": [
+              "Modified a website (HTML, JavaScript, Git).",
+              "Extracted and analyzed database data (Java).",
+              "Generated XML documents from Excel files."
+            ]
+          },
+          {
+            "date": "2018 <small>( 1 month )</small>",
+            "company": "SIX Payment Services",
+            "role": "Summer Job",
+            "details": [
+              "Created a website and managed a banking database.",
+              "Used professional tools: Way4. I had the opportunity to discuss potential solutions during meetings and also present the results of my work month to other departments."
+            ]
+          }
+        ]
+      }
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "projects": [
+          {
+            "name": "MonsterJump",
+            "titles" : { 
+                "technologies": "Technologies used",
+                "gameplay_mechanics": "Gameplay mechanics",
+                "challenges": "Technical challenges",
+                "learn": "What I've learned",
+                "game_preview": "Game preview",
+                "github_title" : "GitHub Link",
+                "video" : "Gameplay Video",
+                "github_link": "Click here to view the Project"
+            },
+            "image": "images/portfolio/small/MonsterJumpEN.png",
+            "full_image": "images/portfolio/MonsterJumpEN.png",
+            "descriptions": [
+                "MonsterJump is the third and final project I completed as part of the Unity Developer - Level 2 training at MakeYourGame over the course of 2 months. This 3D platformer highlights advanced mechanics involving jumps, gravity, AI, and controls.",
+                "The initial goal was to create a smooth and precise platformer, including:",
+                "✔ Optimized jump and gravity management",
+                "✔ A basic <span class='bold-span'>AI</span> for enemies",
+                "✔ An ergonomic control system, suitable for both keyboard and controller",
+                "In addition to the requested objectives, I decided to explore creating 3D assets using Blender to better understand the work of 3D artists within a production pipeline.",
+                "There was therefore a lot of effort put into 3D modeling, organic animations, and gameplay. However, doing all of this in 2 months required some sacrifices. The level design and other aspects of the game were not pushed as far as I would have liked. However, you can check out my second project, Hang Knight, if you want to see a project more focused on level design."
+            ],
+            "technologies": [
+              "🎮 Game Engine: Unity",
+              "💻 Programming Language: C#",
+              "🏗️ Game Mechanics: Rigidbody, gravity management, and applied forces",
+              "🎨 3D Modeling: Blender (Main character and enemies created by hand)",
+              "🎭 Animations: Imported from Mixamo",
+              "🎮 Basic AI: Used NavMeshAgent"
+            ],
+            "gameplay_mechanics": [
+              "🎮 Use of Unity's New Input System: Allows dynamic switching between keyboard and controller without additional configuration",
+              "🦘 Coyote Jump: Adds extra time after leaving a platform to jump, making the gameplay more forgiving",
+              "🎢 Dynamic Jump: The ascent is slower than the descent, simulating realistic gravity with increased force when falling",
+              "🤖 Simple AI: Player detection through Raycast and basic enemy behavior (Patrol and Attack)",
+              "🎭 Optimized Animations: Managed transitions using Animator Controller and BlendTree",
+              "🎨 Creation of custom 3D assets (on my own initiative) to better understand the work of 3D artists"
+            ],
+            "challenges": [
+              "💡 Advanced jump and gravity management: Added Coyote Jump and Dynamic Jump to enhance gameplay. Introduced gameplay elements like unstable platforms that tilt according to the weight of the character.",
+              "💡 Improved controls: Instead of the old Input Manager, I set up Unity's New Input System for an instant transition between keyboard and controller, improving game feel and accessibility.",
+              "💡 Optimization: The area is divided into different parts with corridors separating them. Each zone generates and de-generates as the game progresses to ensure smooth gameplay running at a minimum of 60 fps according to the profiler. (The videos do not represent the current smoothness of the game)",
+              "💡 Creation of custom 3D models: Although the course didn't require 3D asset creation, I wanted to explore Blender to better understand the role of 3D artists and the technical constraints involved in integrating assets into Unity. This allowed me to learn how to optimize a model to integrate well into a game engine."
+            ],
+            "learn": [
+              "✅ Implemented Unity's New Input System for smoother and more accessible control",
+              "✅ Created my own 3D models using Blender (Basic understanding of modeling, retopology, texture painting, etc.) and animated them via Mixamo",
+              "✅ Managed interactions between the player and AI in a 3D environment",
+              "✅ Optimized controls with advanced jump mechanics",
+              "✅ Used advanced physics and gravity techniques for a natural gameplay experience"
+            ],
+            "game_preview": {
+              "images": [
+                "images/portfolio/Blender.png",
+                "images/portfolio/Blender2.png"
+              ],
+              "video": "images/portfolio/video/MonsterJump.mp4"
+            },
+            "github_link": "https://github.com/ElCasaDeNova/MonsterJump"
+          },
+          {
+            "name": "HangKnight",
+            "titles" : { 
+                "technologies": "Technologies used",
+                "gameplay_mechanics": "Gameplay mechanics",
+                "challenges": "Technical challenges",
+                "learn": "What I've learned",
+                "game_preview": "Game preview",
+                "github_title" : "GitHub Link",
+                "video" : "Gameplay Video",
+                "github_link": "Click here to view the Project"
+            },
+            "image": "images/portfolio/small/HangKnightEN.png",
+            "full_image": "images/portfolio/HangKnightEN.png",
+            "descriptions": [
+                "The Hangman is the second project I completed as part of the Unity Developer - Level 2 training by MakeYourGame. The goal of this project was to strengthen my C# programming skills, particularly object-oriented programming (OOP), and to familiarize myself with creating user interfaces (UI) in Unity within two months.",
+                "Having already strong expertise in Java and OOP, I completed the basic version of the project in just three days, including:",
+                "✔ The game logic (handling letters and errors)",
+                "✔ An interactive interface",
+                "✔ Integration of sound effects",
+                "Not wanting to limit myself to a simple 2D implementation, I decided to <span class='bold-span'>push the project further</span> by turning it into a 2.5D experience, integrating 3D models, animations, mixed lighting, and a strong focus on <span class='bold-span'>Level Design</span>."
+            ],
+            "technologies": [
+              "🎮 Game Engine: Unity",
+              "💻 Programming Language: C#",
+              "🖥️ UI: Unity UI for dynamic letter display",
+              "🎭 3D Models and Animations: Mixamo, imported and managed in Unity",
+              "🎨 Level Design and Audio: Added sounds, music, and 3D assets for full immersion",
+              "🔄 <span class='bold-span'>Procedural Generation</span>: Pooling System for optimized use",
+              "💡 Mixed Lighting: Lights contribute significantly to the game's atmosphere"    
+            ],
+            "gameplay_mechanics": [
+                "✔ Transition to a 3D environment: Added 3D models from Mixamo with integrated animations",
+                "✔ Optimized procedural generation with a Pooler: Dynamically retrieves and reuses terrain pieces for a smooth and performant level. The game scrolls infinitely to the right, and the terrain adapts and generates based on the player's progress.",
+                "✔ Interactive story: The character falls when too many errors are made, but dodges a tree when the word is found",
+                "✔ Event handling to simulate the character's falls and/or dodges",
+                "✔ Smooth movement: The character continuously walks to the right",
+                "✔ Immersive UI to guide the player throughout the game"
+            ],
+            "challenges": [
+              "💡 Transition from a 2D game to an interactive 3D environment: I had to readapt the entire game logic, camera, and animation management to fit a 2.5D environment.",
+			  "💡 Optimized procedural generation with a Pooler: To avoid memory overload and improve performance, <span class='bold-span'>I implemented a Pooling System that dynamically manages terrain pieces</span>.",
+			  "💡 Game Optimization: Added Fog, worked on <span class='bold-span'>LOD</span>, and managed <span class='bold-span'>mixed lighting</span>",
+			  "💡 Instead of creating and destroying objects constantly (which is performance-intensive), the Pooler retrieves deactivated terrains and repositions them as the player progresses."
+            ],
+            "learn": [
+                "✅ <span class='bold-span'>Imported and managed 3D models and animations in Unity</span>",
+                "✅ Implemented optimized procedural generation with a Pooling System",
+                "✅ <span class='bold-span'>Created an interactive game</span> with a character reacting to player errors",
+                "✅ Integrated sound effects with animations and an immersive atmosphere (Used Audio Mixer)",
+                "✅ Optimized a project and <span class='bold-span'>went beyond initial expectations</span>"
+            ],
+            "game_preview": {
+              "images": [],
+              "video": "images/portfolio/video/HangKnight.mp4"
+            },
+            "github_link": "https://github.com/ElCasaDeNova/HangMan"
+          },
+          {
+            "name": "SpaceShooter",
+            "titles" : { 
+                "technologies": "Technologies used",
+                "gameplay_mechanics": "Gameplay mechanics",
+                "challenges": "Technical challenges",
+                "learn": "What I've learned",
+                "game_preview": "Game preview",
+                "github_title" : "GitHub Link",
+                "video" : "Gameplay Video",
+                "github_link": "Click here to view the Project"
+            },
+            "image": "images/portfolio/small/SpaceShooterEN.png",
+            "full_image": "images/portfolio/SpaceShooterEN.png",
+            "descriptions": [
+                "Space Shooter 2D is a project I completed in <span class='bold-span'>one month</span> as part of the Unity Developer - Level 2 training at MakeYourGame.",
+                "Its goal was to help me get started with <span class='bold-span'>Unity</span>, learn the basics of <span class='bold-span'>C#</span>, and become familiar with fundamental concepts of video game development.",
+                "This project was designed to <span class='bold-span'>simulate working conditions</span> in the video game industry. Although I worked mostly <span class='bold-span'>independently</span>, I had access to video tutorials provided by the training center and <span class='bold-span'>weekly reviews with an instructor</span>. They analyzed my progress, gave me advice to improve my project, and helped me overcome technical issues when necessary."
+            ],
+            "technologies": [
+              "🎮 Game Engine: Unity",
+              "💻 Programming Language: C#",
+              "🎵 Audio Management: Audio Source for sound effects",
+              "🔥 Use of Poolers to improve game performance",
+              "🖼️ UI/UX: Canvas, TextMeshPro for score display and visual feedback"
+            ],
+            "gameplay_mechanics": [
+                "✔ Ship movement with Rigidbody2D and Input System",
+                "✔ Shooting system with projectiles instantiated using Prefabs",
+                "✔ Random enemy spawns and progressive wave management",
+                "✔ Collision detection between projectiles, enemies, and player",
+                "✔ Dynamic score system displayed in UI",
+                "✔ Sound and visual effects (sound effects, explosions, animations)",
+                "✔ Life management and Game Over screen"
+            ],
+            "challenges": [
+                "💡 Optimizing enemy spawns: I implemented a Spawner that generates enemies at random positions and adjusts the difficulty curve by increasing their frequency and speed progressively.",
+                "💡 Efficient collision management: By using 2D Colliders and OnTriggerEnter2D, I could detect interactions between objects and trigger the corresponding effects (enemy destruction, life reduction, Game Over display).",
+                "💡 Self-learning while being supervised: Thanks to video workshops and regular feedback from my instructor, I was able to structure my learning"
+            ],
+            "learn": [
+                "✅ Understanding Unity's operation (GameObjects, Transform, Components, etc.)",
+                "✅ Writing my first scripts in C# and interacting with objects in real time",
+                "✅ Using the Unity editor to create an interactive scene and organize assets",
+                "✅ Managing the user interface and displaying dynamic information",
+                "✅ Working independently while receiving feedback, as in a professional setting"
+            ],
+            "game_preview": {
+              "images": [],
+              "video": "images/portfolio/video/SpaceShooter.mp4"
+            },
+            "github_link": "https://github.com/ElCasaDeNova/SpaceShooter2D"
+          }
+        ]
+    },
+    "services" : {
+        "mainTitle" : "My Skills",
+        "title1" : "Object-Oriented Programming",
+        "title2" : "Autonomous Work",
+        "title3" : "Problem Solving",
+        "title4" : "Team Spirit",
+        "title5" : "Language Skills",
+        "description1" : [
+            "After working as a <span class='bold'>Java Spring Boot</span> expert for three years, I have gained in-depth expertise in object-oriented programming.",
+			"I apply these skills to game development languages (C#, C++), writing modular, optimized, and readable code to <span class='bold'>facilitate collaboration</span> and maintenance."
+        ],     
+        "description2" : [
+            "After <span class='bold'>1 year of autonomous work</span>, I have learned to manage my tasks, find solutions on my own, and progress effectively. I produce clean and understandable code, facilitating collaboration.",
+            "Once comfortable on a project, I am completely <span class='bold'>autonomous</span>, while knowing how to communicate with the team when necessary."
+        ],
+        "description3" : [
+            "I was designated <span class='bold'>SPOC</span> in my former team thanks to my <span class='bold'>analysis</span>, <span class='bold'>problem-solving</span>, and <span class='bold'>bug explanation</span> skills."
+        ],
+        "description4" : [
+            "I am attentive to my team and enjoy <span class='bold'>sharing</span> my knowledge to strengthen <span class='bold'>work quality</span> and <span class='bold'>group dynamics</span>."
+        ],
+        "description5" : [
+            "Holder of a <span class='bold'>C2 certificate in English</span>, I have <span class='bold'>collaborated</span> with developers from around the world and <span class='bold'>assisted</span> some during their integration."
+        ],
+        "certificate" : "View Certificate"
+    },
+    "contact" : {
+        "adress" : "Address / City / Country",
+		"phone" : "Phone Number",
+		"email" : "Email Address",  
+    }
+  }
+}

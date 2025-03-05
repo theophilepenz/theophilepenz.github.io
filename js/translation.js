@@ -1,0 +1,180 @@
+﻿// Fonction pour charger les traductions depuis translations.json (Fonction uniquement sous serveur)
+function loadTranslations(lang) {
+    if (Object.keys(translations).length === 0) {
+            // Charger translations.json seulement si ce n'est pas déjà fait
+            const response = await fetch('./translations.json');
+            translations = await response.json();
+        }
+
+    localStorage.setItem("preferredLang", lang);
+
+    document.querySelectorAll("[data-key]").forEach(element => {
+        const key = element.getAttribute("data-key");
+        const translation = getNestedTranslation(translations[lang], key);
+        
+        if (translation) {
+            if (Array.isArray(translation)) {
+                element.innerHTML = translation.join("<br>"); // Sépare chaque élément par un saut de ligne
+            } else {
+                element.innerHTML = translation;
+            }
+        } else {
+            console.warn("Traduction manquante pour la clé:", key);
+        }
+    });
+
+    document.querySelector('.dropdown-toggle').innerHTML =
+        (lang === 'fr' ? "🇫🇷 Français" : "🇪🇳 English") + ' <b class="caret"></b>';
+
+    // Applique les traductions pour le résumé
+    applyResumeTranslations(translations, lang);
+
+    // Applique les traductions pour le portfolio
+    applyPortfolioTranslations(translations, lang);
+}
+
+
+function getNestedTranslation(obj, key) {
+    return key.split('.').reduce((acc, part) => acc && acc[part], obj);
+}
+
+// Charger la langue sauvegardée au chargement de la page
+document.addEventListener("DOMContentLoaded", function () {
+    const lang = localStorage.getItem("preferredLang") || "fr";
+    loadTranslations(lang);
+});
+
+function applyResumeTranslations(translations, lang) {
+    const resume = translations[lang].resume;
+    
+    document.querySelector("[data-key='resume.title']").innerHTML = resume.title;
+    document.querySelector("[data-key='resume.education']").innerHTML = resume.education;
+    document.querySelector("[data-key='resume.experience']").innerHTML = resume.experience;
+
+    const educationContainer = document.querySelector("#education-list");
+    const experienceContainer = document.querySelector("#experience-list");
+
+    educationContainer.innerHTML = ""; // Réinitialiser le contenu
+    experienceContainer.innerHTML = ""; // Réinitialiser le contenu
+
+    // Génération dynamique des études
+    resume.entries.education.forEach(entry => {
+        let detailsHTML = entry.details ? entry.details.map(detail => `<p>${detail}</p>`).join("") : "";
+        educationContainer.innerHTML += `
+            <div class="wrapper right">
+                <div class="content">
+                    <div class="education-area">
+                        <h6>${entry.date}</h6>
+                        <h4>${entry.school}</h4>
+                        <h3>${entry.degree}</h3>
+                        ${detailsHTML}
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+
+    // Génération dynamique des expériences professionnelles
+    resume.entries.experience.forEach(entry => {
+        let detailsHTML = entry.details ? entry.details.map(detail => `<p>${detail}</p>`).join("") : "";
+        experienceContainer.innerHTML += `
+            <div class="wrapper right">
+                <div class="content">
+                    <div class="experience-area">
+                        <h6>${entry.date}</h6>
+                        <h4 class="mb-2">${entry.company}</h4>
+                        <h3 class="mb-2">${entry.role}</h3>
+                        ${detailsHTML}
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+}
+
+function applyPortfolioTranslations(translations, lang) {
+    const portfolio = translations[lang].portfolio;
+
+    // Mettre à jour le titre du portfolio
+    document.querySelector("[data-key='portfolio.title']").innerHTML = portfolio.title;
+
+    const portfolioContainer = document.querySelector("#portfolio-projects");
+
+    portfolioContainer.innerHTML = ""; // Réinitialiser le contenu
+
+    // Génération dynamique des projets du portfolio
+    portfolio.projects.forEach(project => {
+        let descriptionsHTML = project.descriptions ? project.descriptions.map(desc => `<p>${desc}</p>`).join("") : "";
+        let technologiesHTML = project.technologies ? project.technologies.map(tech => `<p>${tech}</p>`).join("") : "";
+        let gameplayMechanicsHTML = project.gameplay_mechanics ? project.gameplay_mechanics.map(mech => `<p>${mech}</p>`).join("") : "";
+        let challengesHTML = project.challenges ? project.challenges.map(challenge => `<p>${challenge}</p>`).join("") : "";
+        let learnHTML = project.learn ? project.learn.map(learn => `<p>${learn}</p>`).join("") : "";
+
+        portfolioContainer.innerHTML += `
+            <div class="col-sm-4 col-md-6 col-lg-4">
+                <div class="gallery-items wow fadeInDown" data-wow-delay="0.2s">
+                    <div class="view img" href="#" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        <img src="${project.image}" alt="${project.name}">
+                        <div class="hidden Mimg" data-src="${project.full_image}"></div>
+                        <div class="hidden Mtext" data-title="${project.name}">
+                            <p>${descriptionsHTML}</p>
+                            <h3>${project.titles.technologies}</h3>
+                            <ul>${technologiesHTML}</ul>
+                            <h3>${project.titles.gameplay_mechanics}</h3>
+                            <ul>${gameplayMechanicsHTML}</ul>
+                            <h3>${project.titles.challenges}</h3>
+                            <ul>${challengesHTML}</ul>
+                            <h3>${project.titles.learn}</h3>
+                            <ul>${learnHTML}</ul>
+                            <h3>${project.titles.game_preview}</h3>
+                            <div>
+                                ${project.game_preview.images.map(image => `<img src="${image}" alt="Aperçu du projet">`).join('')}
+                            </div>
+                            <p class="centred-text">${project.titles.video}</p>
+                            <video width="850" controls>
+                                <source src="${project.game_preview.video}" type="video/mp4">
+                                Votre navigateur ne prend pas en charge la vidéo.
+                            </video>
+                            <h3>${project.titles.github_title}</h3>
+                            <p><a href="${project.github_link}" target="_blank">${project.titles.github_link}</a></p>
+                        </div>
+                    </div>
+                    <div class="gallery-text">
+                        <h2>${project.name}</h2>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+}
+
+/*// À utiliser en local
+const translations = {...};
+
+function loadTranslations(lang) {
+    localStorage.setItem("preferredLang", lang);
+
+    document.querySelectorAll("[data-key]").forEach(element => {
+        const key = element.getAttribute("data-key");
+        const translation = getNestedTranslation(translations[lang], key);
+        
+        if (translation) {
+            if (Array.isArray(translation)) {
+                element.innerHTML = translation.join("<br>"); // Sépare chaque élément par un saut de ligne
+            } else {
+                element.innerHTML = translation;
+            }
+        } else {
+            console.warn("Traduction manquante pour la clé:", key);
+        }
+    });
+
+    document.querySelector('.dropdown-toggle').innerHTML =
+        (lang === 'fr' ? "🇫🇷 Français" : "🇪🇳 English") + ' <b class="caret"></b>';
+
+    // Applique les traductions pour le résumé
+    applyResumeTranslations(translations, lang);
+
+    // Applique les traductions pour le portfolio
+    applyPortfolioTranslations(translations, lang);
+}*/
