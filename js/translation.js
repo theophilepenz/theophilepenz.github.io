@@ -154,8 +154,32 @@ function applyPortfolioTranslations(translations, lang) {
     });
 }
 
+// Gérer l'affichage du modal à l'ouverture d'un projet
+$(document).on('click', '.view.img', async function () {
+    console.log("Ouverture du modal...");
+    const modal = $('.bd-example-modal-lg');
+    const projectTitle = $(this).find('.gallery-text h2').text();
+    const modalContent = $(this).find('.hidden.Mtext').html();
+    const modalImgSrc = $(this).find('.hidden.Mimg').attr('data-src');
+
+    // Vérifie si les traductions sont bien chargées
+    if (!translations || Object.keys(translations).length === 0) {
+        console.warn("Les traductions ne sont pas encore chargées. Chargement...");
+        const lang = localStorage.getItem("preferredLang") || "fr";
+        await loadTranslations(lang);
+    }
+
+    // Mettre à jour le contenu du modal
+    $('#modalTitle').text(projectTitle);
+    $('#modalText').html(modalContent);
+    $('#modalImg').attr('src', modalImgSrc);
+
+    // Afficher la pop-up
+    modal.modal('show');
+});
+
 /*// À utiliser en local
-const translations = {...};
+const translations = {};
 
 function loadTranslations(lang) {
     localStorage.setItem("preferredLang", lang);
