@@ -1,6 +1,5 @@
-﻿let translations = {};
-
-// Fonction pour charger les traductions depuis translations.json (Fonction uniquement sous serveur)
+﻿// Fonction pour charger les traductions depuis translations.json (Fonction uniquement sous serveur)
+let translations = {};
 async function loadTranslations(lang) {
 
     if (Object.keys(translations).length === 0) {
@@ -40,6 +39,37 @@ async function loadTranslations(lang) {
     // Applique les traductions pour le portfolio
     applyPortfolioTranslations(translations, lang);
 }
+
+/*// À utiliser en local
+const translations = {} ;
+
+function loadTranslations(lang) {
+    localStorage.setItem("preferredLang", lang);
+
+    document.querySelectorAll("[data-key]").forEach(element => {
+        const key = element.getAttribute("data-key");
+        const translation = getNestedTranslation(translations[lang], key);
+
+        if (translation) {
+            if (Array.isArray(translation)) {
+                element.innerHTML = translation.join("<br>"); // Sépare chaque élément par un saut de ligne
+            } else {
+                element.innerHTML = translation;
+            }
+        } else {
+            console.warn("Traduction manquante pour la clé:", key);
+        }
+    });
+
+    document.querySelector('.dropdown-toggle').innerHTML =
+        (lang === 'fr' ? "🇫🇷 Français" : "🇪🇳 English") + ' <b class="caret"></b>';
+
+    // Applique les traductions pour le résumé
+    applyResumeTranslations(translations, lang);
+
+    // Applique les traductions pour le portfolio
+    applyPortfolioTranslations(translations, lang);
+}*/
 
 
 function getNestedTranslation(obj, key) {
@@ -111,15 +141,23 @@ function applyPortfolioTranslations(translations, lang) {
     portfolioContainer.innerHTML = ""; // Réinitialiser le contenu
 
     // Génération dynamique des projets du portfolio
-    portfolio.projects.forEach(project => {
+    portfolio.projects.forEach((project, index) => {
         let descriptionsHTML = project.descriptions ? project.descriptions.map(desc => `<p>${desc}</p>`).join("") : "";
-        let technologiesHTML = project.technologies ? project.technologies.map(tech => `<p>${tech}</p>`).join("") : "";
-        let gameplayMechanicsHTML = project.gameplay_mechanics ? project.gameplay_mechanics.map(mech => `<p>${mech}</p>`).join("") : "";
-        let challengesHTML = project.challenges ? project.challenges.map(challenge => `<p>${challenge}</p>`).join("") : "";
-        let learnHTML = project.learn ? project.learn.map(learn => `<p>${learn}</p>`).join("") : "";
+        let technologiesHTML     = project.technologies ? project.technologies.map(tech => `<li>${tech}</li>`).join("") : "";
+let gameplayMechanicsHTML= project.gameplay_mechanics ? project.gameplay_mechanics.map(m => `<li>${m}</li>`).join("") : "";
+let challengesHTML       = project.challenges ? project.challenges.map(c => `<li>${c}</li>`).join("") : "";
+let learnHTML            = project.learn ? project.learn.map(l => `<li>${l}</li>`).join("") : "";
+
+        let colClass = "";
+
+        if (index === 0) {
+            colClass = "col-12 portfolio-big";
+        } else {
+            colClass = "col-sm-4 col-md-6 col-lg-4";
+        }
 
         portfolioContainer.innerHTML += `
-            <div class="col-sm-4 col-md-6 col-lg-4">
+            <div class="${colClass}">
                 <div class="gallery-items wow fadeInDown" data-wow-delay="0.2s">
                     <div class="view img" href="#" data-toggle="modal" data-target=".bd-example-modal-lg">
                         <img src="${project.image}" alt="${project.name}">
@@ -135,7 +173,7 @@ function applyPortfolioTranslations(translations, lang) {
                             <h3>${project.titles.learn}</h3>
                             <ul>${learnHTML}</ul>
                             <h3>${project.titles.game_preview}</h3>
-                            <div>
+                            <div class="col-12 portfolio-small">
                                 ${project.game_preview.images.map(image => `<img src="${image}" alt="Aperçu du projet">`).join('')}
                             </div>
                             <p class="centred-text">${project.titles.video}</p>
@@ -181,34 +219,3 @@ $(document).on('click', '.view.img', async function () {
     // Afficher la pop-up
     modal.modal('show');
 });
-
-/*// À utiliser en local
-const translations = {};
-
-function loadTranslations(lang) {
-    localStorage.setItem("preferredLang", lang);
-
-    document.querySelectorAll("[data-key]").forEach(element => {
-        const key = element.getAttribute("data-key");
-        const translation = getNestedTranslation(translations[lang], key);
-        
-        if (translation) {
-            if (Array.isArray(translation)) {
-                element.innerHTML = translation.join("<br>"); // Sépare chaque élément par un saut de ligne
-            } else {
-                element.innerHTML = translation;
-            }
-        } else {
-            console.warn("Traduction manquante pour la clé:", key);
-        }
-    });
-
-    document.querySelector('.dropdown-toggle').innerHTML =
-        (lang === 'fr' ? "🇫🇷 Français" : "🇪🇳 English") + ' <b class="caret"></b>';
-
-    // Applique les traductions pour le résumé
-    applyResumeTranslations(translations, lang);
-
-    // Applique les traductions pour le portfolio
-    applyPortfolioTranslations(translations, lang);
-}*/

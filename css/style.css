@@ -1363,3 +1363,15 @@ canvas {
     width: 100%;
     height: 100%;
 }
+
+.portfolio-big img {
+    width: 100%;
+    height: 250px; /* adapte à la hauteur des autres */
+    object-fit: cover; /* rogne pour garder le rendu sans déformer */
+}
+
+.portfolio-small img {
+    width: 100%;
+    height: 500px; /* adapte à la hauteur des autres */
+    object-fit: cover; /* rogne pour garder le rendu sans déformer */
+}
