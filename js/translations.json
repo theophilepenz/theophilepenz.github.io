@@ -46,10 +46,10 @@
                 "experience": [
                     {
                         "date": "Août 2024 - aujourd'hui ",
-                        "company": "Gameplay Programmer",
-                        "role": "Freelance",
+                        "company": "Freelance",
+                        "role": "Gameplay Programmer",
                         "details": [
-                            "Développement de jeux sous Unity (C#) et Unreal Engine 5.6 (C++)",
+                            "Développe des jeux sous Unity (C#) et Unreal Engine 5.6 (C++)",
                             "Transforme les idées en Gameplay",
                             "Travail sur les systèmes 3C, les systèmes d’interaction et les mécaniques de gameplay principales."
                         ]
@@ -412,8 +412,8 @@
                 "experience": [
                     {
                         "date": "AUG 2024 – PRESENT",
-                        "company": "Gameplay Programmer",
-                        "role": "Freelance",
+                        "company": "Freelance",
+                        "role": "Gameplay Programmer",
                         "details": [
                             "Develop games using Unity (C#) and Unreal Engine 5 (C++).",
                             "Transform ideas into Gameplay",
