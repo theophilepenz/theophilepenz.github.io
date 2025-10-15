@@ -46,18 +46,18 @@
                 "experience": [
                     {
                         "date": "Août 2024 - aujourd'hui ",
-                        "company": "Développeur indépendant",
-                        "role": "Auto-apprentissage / Projets personnels",
+                        "company": "Gameplay Programmer",
+                        "role": "Freelance",
                         "details": [
-                            "Apprentissage en autonomie sur Unreal Engine 5.6 (Blueprints & C++), avec un focus sur la logique moteur, les systèmes de gameplay et une architecture de code propre.",
-                            "Développement de projets personnels pour approfondir mes connaissances et appliquer les bonnes pratiques professionnelles.",
-                            "Mise en œuvre continue des bonnes pratiques, notamment l’utilisation de Git et des méthodes agiles."
+                            "Développement de jeux sous Unity (C#) et Unreal Engine 5.6 (C++)",
+                            "Transforme les idées en Gameplay",
+                            "Travail sur les systèmes 3C, les systèmes d’interaction et les mécaniques de gameplay principales."
                         ]
                     },
                     {
                         "date": "2021 - 2024 <small>( 3 ans )</small>",
                         "company": "Worldline Financial Services",
-                        "role": "Spring Boot Developer",
+                        "role": "Ingénieur Logiciel",
                         "details": [
                             "Développement (Programmation Orientée Objet) en équipe Agile/Scrum avec des équipes anglophones et francophones.",
                             "Collaboration étroite avec designers et managers pour livrer des fonctionnalités complexes et optimisées.",
@@ -412,18 +412,18 @@
                 "experience": [
                     {
                         "date": "AUG 2024 – PRESENT",
-                        "company": "Independent developer",
-                        "role": "Self-learning / Personnal Projects",
+                        "company": "Gameplay Programmer",
+                        "role": "Freelance",
                         "details": [
-                            "Self-learning with Unreal Engine 5.6 (Blueprints & C++), with a focus on engine logic, gameplay systems, and clean architecture.",
-                            "Development of personal projects to deepen my knowledge and apply professional best practices.",
-                            "Continuous application of best practices, including the use of Git and agile methods."
+                            "Develop games using Unity (C#) and Unreal Engine 5 (C++).",
+                            "Transform ideas into Gameplay",
+                            "Work on 3C,  interaction systems, and core gameplay mechanics."
                         ]
                     },
                     {
                         "date": "2021 - 2024 <small>( 3 years )</small>",
                         "company": "Worldline Financial Services",
-                        "role": "Spring Boot Developer",
+                        "role": "Software Engineer",
                         "details": [
                             "Developed in Agile/Scrum teams with English- and French-speaking colleagues.",
                             "Collaborated closely with designers and managers to deliver complex and optimized features.",
